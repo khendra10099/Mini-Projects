@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffabab;
+}
+
+header h1 {
+    padding: 1rem;
+    color: rgb(226, 2, 2);
+    font-weight: 100;
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 100;
+    border-right: 1px solid rgb(226, 2, 2);
+    padding: 0 1rem 0;
+    margin: 0 0 1rem;
+}
+header nav a:last-child {
+    border: none;
+}
+
+.heading {
+    margin: 1.7rem;
+}
+
+.heading .box-heading {
+    float: left;
+    margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.heading p {
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.heading h2 {
+    letter-spacing: 2px;
+    font-size: 1.7em;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem auto 1rem;
+}
+
+main div {
+    min-width: 300px;
+    width: 50%;
+    height: 100%;
+}
+
+main figure {
+    width: 50%;
+    min-width: 300px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+main figure img {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #ffabab;
+    color: rgb(226, 2, 2);
+    text-align: center;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 1em;
+    }
+
+    header nav a {
+        border: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div {
+        margin: 0 auto 0.5rem;
+    }
+
+    main figure {
+        margin: 0.5rem auto 0;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    * {
+        font-size: 1em;
+    }
+    main div {
+        min-width: 200px;
+    }
+
+    main figure {
+        min-width: 200px;
+        padding: 0;
+    }
+}
