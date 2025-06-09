@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(128, 0, 128, 0.3);
+    color: purple;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.content-box {
+    width: calc(50% - 24px);
+    min-width: 350px;
+    padding: 1rem;
+}
+
+.content-box img {
+    width: 100px;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.3);
+}
+
+footer p {
+    padding: 0.5rem;
+    font-size: 1em;
+}
+
+@media (max-width: 767px) {
+    footer {
+        position: relative;
+    }
+}
