@@ -44,6 +44,12 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.content-box img::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 footer {
     position: fixed;
     bottom: 0;
